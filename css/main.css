@@ -1,0 +1,744 @@
+    .btn-group {
+    z-index: 1051;
+}
+/* GLOBAL STYLES -------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+ body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+/* CUSTOMIZE THE NAVBAR -------------------------------------------------- */
+.bold {
+    font-weight: bold;
+    font-size: .95em;
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+ .navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px;
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+.navbar-wrapper .navbar {
+}
+#YouTubeExtension {
+    bottom: 0;
+    left: -1em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* Remove border and change up box shadow for more contrast */
+ .navbar .navbar-inner {
+    border: 0;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+}
+/* Downsize the brand/project name a bit */
+ .navbar .brand {
+    padding: 14px 20px 13px;
+    /* Increase vertical padding to match navbar links */
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+}
+/* Navbar links: increase padding for taller navbar */
+ .navbar .nav > li > a {
+    padding: 15px 20px;
+}
+/* Offset the responsive button for proper vertical alignment */
+ .navbar .btn-navbar {
+    margin-top: 10px;
+}
+/* CUSTOMIZE THE CAROUSEL -------------------------------------------------- */
+
+/* Carousel base class */
+ .carousel {
+    margin-bottom: 60px;
+}
+.carousel .container-fluid {
+    position: relative;
+    z-index: 9;
+}
+.carousel-control {
+    height: 80px;
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+.carousel .item {
+    height: 500px;
+}
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+.carousel-caption h1, .carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 4px 5px rgba(0, 0, 0, .4);
+}
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+/* MARKETING CONTENT -------------------------------------------------- */
+h1.large-sz {
+    line-height: 61px;
+    font-size: 71.5px;
+}
+/* Center align the text within the three columns below the carousel */
+ .marketing .span4 {
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Featurettes ------------------------- */
+ .featurette-divider {
+    margin: 80px 0;
+    /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+    /*padding-top: 120px;*/
+    /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden;
+    /* Vertically center images part 2: clear their floats. */
+    /*padding-bottom: 120px;*/
+}
+.featurette-image {
+    margin-bottom: 31px;
+    /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+ .featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 95px;
+}
+/* Thin out the marketing headings */
+ .featurette-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+a.footer-terms {
+    color: #737373;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 1em;
+}
+
+/*  COLORS  */
+.danger {
+    color: red;
+}
+.warning {
+    color: orange;
+}
+.success {
+    color: green;
+}
+.primary {
+    color: blue;
+}
+.info {
+    color: skyblue;
+}
+.default {
+    color: #00000;
+}
+div.float-right {
+    width: 30em;
+    float: right;
+    position: relative;
+    bottom: 11em;
+}
+img.main-br {
+    height: auto;
+    max-width: 28em;
+    vertical-align: middle;
+    border: 2px solid grey;
+    /* -ms-interpolation-mode: bicubic; */
+    border-radius: .9em;
+    float: right;
+    margin-bottom: 1.5em;
+}
+.marg-r {
+    margin-right: 27em;
+}
+div.carousel-caption.short-c-caption {
+    position: relative;
+    top: 3em
+}
+
+/* Google Image Logo Icon */
+img.google-logo-size {
+    width: 72px;
+    height: 28px;
+}
+h4.ho-main-clr {
+    position: relative;
+    left: 9em
+}
+/* RESPONSIVE CSS -------------------------------------------------- */
+ @media (max-width: 979px) {
+    body {
+        padding-top: 2em;
+    }
+/*    .carousel-caption {
+        margin-top: 2.9em;
+    }*/
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
+    .carousel .item {
+        height: 500px;
+    }
+    .carousel img {
+        width: auto;
+        height: 500px;
+    }
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+    .featurette-image.pull-left, .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 95%;
+        border-radius: 0.6em;
+        margin: 0 auto 20px;
+    }
+/*    a.footer-terms.bottom-r.b-r-media {
+        position: relative;
+        left: 13em;
+        top: 0;
+    }
+*//*    img.main-br.img-media {
+        margin: 1em 0 0 0;
+    }*/
+    p.block-quotage.p-block-media {
+        position: relative;
+        right: 1em;
+        width: 29em;
+    }
+    blockquote.block-align-r.block-media {
+        position: relative;
+        left: 1em;
+    }
+    img.main-br.img-media {
+        /*height: auto;*/
+        /*max-width: 28em;*/
+        /*vertical-align: middle;*/
+        /*border: 2px solid grey;*/
+        /* -ms-interpolation-mode: bicubic; */
+        /*border-radius: .9em;*/
+        /*float: right;*/
+        /*width: 19em;*/
+        margin: 1em 0 1em 1em;
+    }
+
+
+
+}
+@media (max-width: 767px) {
+    img.main-br {
+        height: auto;
+        max-width: 28em;
+        vertical-align: middle;
+        border: 2px solid grey;
+        /* -ms-interpolation-mode: bicubic; */
+        border-radius: .9em;
+        float: right;
+        width: 19em;
+    }
+
+
+
+  /*  a.footer-terms.bottom-r.b-r-media {
+        position: relative;
+        top: 4em;
+    }*/
+
+/*    h4.ho-main-clr {
+        top: -2em;
+        left: 15em;
+    }
+*/    .marg-r {
+        margin-right: 0;
+    }
+/*    h4.media-ex.ho-main-clr {
+        position: relative;
+        top: -2em;
+        left: 15em;
+    }*/
+    div.float-right {
+        width: 30em;
+        float: right;
+        position: relative;
+        bottom: -1em;
+    }
+    .lil-marg-top {
+        margin-top: 2em;
+    }
+    .container-fluid.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-inner {
+        margin: -20px;
+    }
+    .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .carousel .container-fluid {
+        margin-top: 1em;
+    }
+    blockquote.block-align-r.block-media {
+        position: relative;
+        left: 0em;
+    }
+    p.block-quotage.p-block-media{
+        position: relative;
+        right: 1em;
+        width: 10em;
+    }
+      .carousel .item {
+        height: 340px;
+    }
+    .ewCalculus {
+
+    }
+    .carousel img {
+        height: 340px;
+    }
+    .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 3em;
+        margin-left: 1em;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-caption .lead, .carousel-caption .btn {
+        font-size: 18px;
+    }
+    .marketing .span4 + .span4 {
+        margin-top: 40px;
+    }
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    a.footer-terms {
+        /*padding-left: 0;*/
+        /*position: relative;*/
+        /*bottom: 2em;*/
+        /*left: -2em;*/
+    }
+
+}
+@media (max-width: 320px) {
+
+    div.carousel-caption {
+        width: 65%;
+        position: absolute;
+        left: -2.5em;
+        top: -.5em;
+    }
+    .carousel-caption h1 {
+        font-size: 22px;
+    }
+    .carousel-caption .lead, .carousel-caption .btn {
+        font-size: 17px;
+    }
+    a.btn.btn-large.btn-primary {
+        float: none;
+        margin: 0 auto;
+    }
+/*    a.footer-terms.bottom-l {
+        position: relative;
+        bottom: -2.05em;
+        right: 0.75em;
+    }
+*/ /*   a.footer-terms.bottom-r {
+        position: relative;
+        bottom: -1.8em;
+        right: .3em;
+    }
+*/    .smaller {
+        width: 8em;
+    }
+    h4.media-ex.ho-main-clr {
+        position: relative;
+        left: 17.8em;
+        top: -2em;
+    }
+/*    a.footer-terms.bottom-r {
+        /*color: #737373;*/
+        /*font-weight: 700;*/
+        /*font-size: 14px;
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }*/
+    a.btn.btn-large.btn-primary {
+        background: #53A93F;
+    }
+/*    a.footer-terms.pp {
+        position: relative;
+        top: 4em;
+        right: -6.3em;
+    }
+    a.footer-terms.hp {
+        position: relative;
+        top: 2.3em;
+        right: .8em;
+    }
+*/
+/*    img.ewwCalculus {
+        position: relative;
+        left: 8em;
+    }*/
+    img.main-br.img-media {
+        width: 15em;
+    }
+/*    p.block-quotage.p-block-media {
+        width: 15em;
+    }*/
+
+}
+
+img.img-circle {
+    width: 16em;
+}
+img.featurette-image {
+    width: 30em;
+    border-radius: .75em;
+}
+img.smaller {
+    width: 9em;
+}
+blockquote p {
+    margin: 26px 40px;
+    font-style: italic;
+    font-weight: 200;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    font-size: 1.7125em;
+    line-height: 1.2381em;
+    color: #7e7e7e;
+}
+/*p.r-content-box {
+    margin-left: 33em;
+}*/
+div.right-orgs {
+    bottom: 16em;
+    position: relative;
+}
+
+/* Find Org Colors Here*/
+.org1-name i {
+    color: #F38630;
+}
+.org2-name i {
+    color: #C72E5C;
+}
+.org3-name i {
+    color: #53A93F;
+}
+.org4-name i {
+    color: #EDE245;
+}
+.org5-name i {
+    color: #4662BD;
+}
+
+blockquote {
+    border-left: 5px solid #53A93F;
+}
+div.cont-algn-l {
+    text-align: left;
+}
+p.block-quotage {
+    position: relative;
+    right: 17em;
+    width: 35em;
+}
+blockquote.block-align-r {
+    position: relative;
+    left: 33em;
+}
+h4.txt-lil-larger {
+    font-size: 15pt;
+}
+/*h4.ho-main-clr {
+    position: relative;
+    left: 9em
+}*/
+.ho-main-clr, btn-ho-main-clr {
+    color: #53A93F;
+}
+.lead p {
+    line-height: 30px;
+}
+ol.lead {
+    padding-left: .25em;
+}
+/* For the "Join us for the Helpouts Challenge" to be flush
+p.lead.pad-l-md {
+    padding-left: 22em;
+}
+*/
+ .btn-group {
+    z-index: 1051;
+}
+
+/* From the Formatter changing GDoc to HTML */
+ ol {
+    margin:0;
+    padding:0
+}
+.c1 {
+    widows:2;
+    margin-right:12pt;
+    orphans:2;
+    direction:ltr
+}
+.c2 {
+    widows:2;
+    orphans:2;
+    height:11pt;
+    direction:ltr
+}
+.c5 {
+    widows:2;
+    orphans:2;
+    direction:ltr
+}
+.c11 {
+    max-width:468pt;
+    padding:72pt 72pt 72pt 72pt
+}
+.c8 {
+    text-align:center
+}
+.c0 {
+    font-size:10pt
+}
+.c3 {
+    font-weight:bold
+}
+.c10 {
+    background-color:#ffff00
+}
+.c9 {
+    background-color:#ffffff
+}
+.c7 {
+    font-size:12pt
+}
+.c6 {
+    font-style:italic
+}
+.c4 {
+    color:#0000ff
+}
+
+/* ==============================================================
+    clearly_highlighting_css
+   ===========================================================-*/
+
+/* selection */
+html.clearly_highlighting_enabled ::-moz-selection {
+    background: rgba(246, 238, 150, 0.99);
+}
+html.clearly_highlighting_enabled ::selection {
+    background: rgba(246, 238, 150, 0.99);
+}
+/* cursor */
+html.clearly_highlighting_enabled {
+    /* cursor and hot-spot position -- requires a default cursor, after the URL one */
+    cursor: url("chrome - extension: //pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text;
+}
+/* highlight tag */
+em.clearly_highlight_element {
+    font-style: inherit !important;
+    font-weight: inherit !important;
+    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-size: 100% 100%;
+}
+/* the delete-buttons are positioned relative to this */
+em.clearly_highlight_element.clearly_highlight_first {
+    position: relative;
+}
+.modal2 {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    z-index: 1050;
+    width: 850px;
+    /* height: 15em; */
+    margin-left: -400px;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    outline: none;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.modal-body2 {
+    position: relative;
+    max-height: 518px;
+    padding: 15px;
+    overflow-y: auto;
+}
+/* delete buttons */
+em.clearly_highlight_element a.clearly_highlight_delete_element {
+    display: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: -17px;
+    top: -17px;
+    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+em.clearly_highlight_element a.clearly_highlight_delete_element:hover {
+    background-position: -34px 0px;
+}
+/* retina */
+@media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    em.clearly_highlight_element {
+    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png");
+}
+em.clearly_highlight_element a.clearly_highlight_delete_element {
+    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png");
+    background-size: 68px 34px;
+    }
+    a.footer-terms.back-2-top {
+        /*color: #737373;*/
+        /*font-weight: 700;*/
+        /*font-size: 14px;*/
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* ==============================================================
+    something
+   ===========================================================-*/
+
+[touch-action="none"] {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+[touch-action="pan-x"] {
+    -ms-touch-action: pan-x;
+    touch-action: pan-x;
+}
+
+[touch-action="pan-y"] {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{
+    -ms-touch-action: pan-x pan-y;
+    touch-action: pan-x pan-y;
+}
+
+.fancybox-margin{
+    margin-right:0px;
+}
+
+
+ol.lead {
+    padding-left: 2.25em;
+}
+
+ol.alph {
+    padding-left: 2em;
+}
+
+img.float-right.main-br {
+    float: right;
+    width: 32em;
+    border-radius: .8em;
+    border: 2px solid grey;
+    margin: 1em;
+}
+
+/*h4.ho-main-clr {
+    float: right;
+    position: relative;
+    top: 25.5em;
+    left: 19em;
+}
+*/
+@media(min-width: 1200px) {
+    div.container-fluid.marketing.container {
+        width: 960px;
+    }
+    .special.container {
+        width: 960px;
+    }
+}
+
+.lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+a.footer-terms.bottom-r {
+    margin-right: 15.4em;
+}
